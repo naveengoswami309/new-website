@@ -21,29 +21,6 @@ nav{
         margin-left: 5px;
         transition: 0.3s;
 }
-/* .navbar {
-    position: relative;
-}
-
-.navbar .dropdown ul{
-        margin: 0;
-        padding: 10px 0;
-        position: absolute;
-        left: 14px;
-        top: 130%;
-        transition: 0.3s;
-        border-radius: 4px;
-        z-index: 99;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-        background-color: white;
-        
-        
-    }
-
-
-.dropdown:hover .navbar .dropdown ul {
-    display: block;
-  } */
 
   .dropdown {
     position: relative;
@@ -55,20 +32,22 @@ nav{
 }
   
   .show-dropdown {
-    opacity: 0;
+    display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-    top: 50px;
+    top: 20px;
     transition: all 1.5s;
   }
   
   .dropdown:hover .show-dropdown {
-    opacity: 1;
-    transition: all 1.5s;
+    transition: all 0.5s;
+    display: block;
+
+    
     
   }
   .deepdropdown {
@@ -94,10 +73,18 @@ nav{
   }
   .deepdropdown:hover .show-dropdown1{
     opacity: 1;
-    transition: all 1.5s;
+    transition: all 0.5s;
   }
   
-
+.background{
+    background-image: url(./hero-bg-light.webp);
+    height: 800px;
+    background-position: top;
+    background-size: cover;
+}
+.background .bgwhite{
+    background-color: #f9f9f9cd;
+}
 .navfirst{
     display: flex;
 }
@@ -202,4 +189,53 @@ width: 50%;
 .firstfront{
     width: 100%;
     text-align: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.content .box{
+    display: flex;
+    width: 30%;
+}
+.content .box .label{
+    width: 70px;
+    height: 70px;
+    background-color: #388ea838;
+}
+.content .box .label i{
+font-size: 35px;
+padding: 17px 18px;
+}
+.content .box .labeltext{
+    width: 55%;
+    margin-left: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.content .box .labeltext p{
+    font-size: 12px;
+    color: gray;
+}
+.about{
+    display: flex;
+}
+.about .abouttext p{
+    margin-bottom: 15px;
+}
+.about .abouttext .readmore{
+    background-color: #388da8;
+    color: #f9f9f9;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
