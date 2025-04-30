@@ -1,0 +1,205 @@
+*{margin: 0; padding: 0;}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    display: inline-flex;
+    margin: 0px 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.navbar .dropdown i{
+        font-size: 12px;
+        line-height: 2;
+        margin-left: 5px;
+        transition: 0.3s;
+}
+/* .navbar {
+    position: relative;
+}
+
+.navbar .dropdown ul{
+        margin: 0;
+        padding: 10px 0;
+        position: absolute;
+        left: 14px;
+        top: 130%;
+        transition: 0.3s;
+        border-radius: 4px;
+        z-index: 99;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        
+        
+    }
+
+
+.dropdown:hover .navbar .dropdown ul {
+    display: block;
+  } */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .navbar .dropdown ul li{
+    padding: 10px 0px;
+    width: 200px;
+}
+  
+  .show-dropdown {
+    opacity: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 50px;
+    transition: all 1.5s;
+  }
+  
+  .dropdown:hover .show-dropdown {
+    opacity: 1;
+    transition: all 1.5s;
+    
+  }
+  .deepdropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .navbar .deepdropdown ul li{
+    padding: 10px 0px;
+    width: 200px;
+}
+
+  .show-dropdown1 {
+    opacity: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 50px;
+    transition: all 1.5s;
+    right: 230px;
+  }
+  .deepdropdown:hover .show-dropdown1{
+    opacity: 1;
+    transition: all 1.5s;
+  }
+  
+
+.navfirst{
+    display: flex;
+}
+nav .navfirst .navimg img {
+    width: 40px;
+    margin-right: 10px;
+
+}
+.navtext h1{
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: light;
+
+}
+
+.navbar ul li button{
+    color: #ffffff;
+    background: #388da8;;
+    font-size: 14px;
+    padding: 8px 25px;
+    margin: 0px 0px 0px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.firstfront{
+    width: 100%;
+   align-items: center;
+   line-height: 60px;
+   margin-top: 50px;
+}
+.firstfront h1{
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.firstfront h1 span{
+    color: #388da8;
+}
+.firstfront p{
+    font-size: 20px;
+    color: grey;
+
+}
+
+.firstfront .ffbtn{
+    display: flex;
+    justify-content: center;
+}
+.firstfront .ffbtn .btn1{
+    margin-right: 30px;
+}
+
+.firstfront .ffbtn .btn1 button{
+    margin-right: 10px;
+    color: #ffffff;
+    background: #388da8;;
+    font-size: 14px;
+    padding: 8px 25px;
+    margin: 0px 0px 0px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.firstfront .ffbtn .btn2 button{
+    border: none;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: solid 2px #388da8;
+    background-color: white;
+}
+.firstfront .ffbtn .btn2 button i{
+    font-size: 15px;
+}
+.firstfront .ffbtn .btn2 span{
+    margin-left: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.bg1{
+    display: flex;
+    justify-content: center;
+}
+.bg1 .bg1img{
+width: 50%;
+
+
+}
+.bg1img img{
+    width: 100%;
+}
+.firstfront{
+    width: 100%;
+    text-align: center;
+}
