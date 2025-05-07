@@ -222,9 +222,14 @@ padding: 17px 18px;
 }
 .about{
     display: flex;
+    margin-left: 40px;
+    margin-top: 100px;
 }
+
 .about .abouttext p{
-    margin-bottom: 15px;
+    margin: 15px 0px;
+    font-size: 20px;
+    color: gray;
 }
 .about .abouttext .readmore{
     background-color: #388da8;
@@ -238,4 +243,46 @@ padding: 17px 18px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px ;
+    text-decoration: none;
+    width: 12%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.about .abouttext .readmore::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: 0.5s all ease;
+    transform: translateX(-50%);
+   
+
+}
+.about .abouttext .readmore:hover::before{
+    transform: translateX(0%);
+    width: 100%;
+   
+}
+
+.abouttext h3{
+font-size: 35px;
+width: 70%;
+}
+.about ul li{
+    list-style: none;
+    line-height: 34px;
+}
+.about ul li i{
+    color: #388da8;
+    margin-right: 20px;
+}
+.space{
+    height: 100px;
 }
